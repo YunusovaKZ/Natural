@@ -1,0 +1,71 @@
+﻿<Window x:Class="Natural.AkkauntSeller"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Natural"
+        mc:Ignorable="d"
+        Title="AkkauntSeller" Height="600" Width="1000" MinHeight="600" MinWidth="1000">
+    <Grid x:Name="PanelData">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*">
+                </RowDefinition>
+                <RowDefinition Height="5*">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <UniformGrid Columns="1" Rows="1" Grid.Column="0">
+                    <Label Foreground="#18B514" Content="Naturel" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
+                </UniformGrid>
+                <UniformGrid Columns="1" Rows="1" Grid.Column="3">
+                    <TextBlock x:Name="TbExit" MouseLeftButtonUp="TbExit_MouseLeftButtonUp"  Foreground="#18B514" Text="Выход" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+                </UniformGrid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Введите Фамилию" Grid.Row="0" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите Имя" Grid.Row="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите Отчество(если есть)" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите дату рождения" Grid.Row="3" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите серию и номер паспорта" Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите ИНН" Grid.Row="5" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите адрес проживания" Grid.Row="6" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите телефон" Grid.Row="7" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="Введите пол" Grid.Row="8" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+            <Label Content="Введите зарплату" Grid.Row="9" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+            <TextBox x:Name="TxtSurname" Grid.Row="0" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtName" Grid.Row="1" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtOtchestvo" Grid.Row="2" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <DatePicker x:Name="DpBirthday" Grid.Row="3" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></DatePicker>
+                <TextBox x:Name="TxtPasrort" Grid.Row="4" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtINN" Grid.Row="5" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtAdress" Grid.Row="6" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtPhone" Grid.Row="7" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+                <TextBox x:Name="TxtGender" Grid.Row="8" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="TxtSelery" Grid.Row="9" Grid.Column="1" Height="30" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <Button x:Name="BtnSaveBuyer" Click="BtnSaveBuyer_Click" Content="Сохранить" Grid.Row="10" Grid.ColumnSpan="2" Background="#18B514" FontSize="30"></Button>
+            </Grid>
+        </Grid>
+</Window>
